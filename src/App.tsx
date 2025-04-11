@@ -7,11 +7,11 @@ import Testimonies from "./components/Testimonies";
 
 function App() {
   return (
-    <div className="bg-radial-[at_100%_0%] from-[#415b62] to-[#1b1f24] to-50% flex flex-col items-center min-h-screen w-screen m-0 p-0 overflow-x-hidden text-slate-50">
+    <div className="bg-radial-[at_100%_0%] from-[#415b62] to-[#1b1f24] to-50% flex flex-col items-center gap-20 min-h-screen w-screen m-0 p-0 overflow-x-hidden text-slate-50">
       <Navbar />
       <Home />
       <Genres />
-      <h2>
+      <h2 className="text-5xl w-3/5 text-center my-20">
         Musikalis is the best music platform ever created, Musikalis aims to
         give new singers a place to express their work.
       </h2>
