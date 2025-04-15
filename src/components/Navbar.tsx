@@ -1,6 +1,24 @@
+import gsap from "gsap";
+
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
 const Navbar = () => {
+  gsap.registerPlugin(useGSAP, ScrollTrigger);
+  useGSAP(() => {
+    gsap.fromTo(
+      ".nav",
+      { y: "-100%", opacity: 0 },
+      {
+        scrollTrigger: ".nav",
+        y: "0%",
+        opacity: 1,
+        duration: 1,
+        ease: "power2.out",
+      }
+    );
+  });
   return (
-    <div className="fixed top-0 w-7/8 flex justify-between m-5">
+    <div className="z-50 nav backdrop-blur-sm fixed top-0 w-full bg-cyan-950/50 flex justify-between p-5 nav -translate-y-[100%]">
       <span>Musikalis</span>
       <div className="flex">
         <button className="px-5 bg-transparent border-none">Home</button>

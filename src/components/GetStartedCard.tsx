@@ -20,7 +20,7 @@ const GetStartedCard = () => {
       <img
         src={image1}
         alt=""
-        className="absolute h-96 w-96 -right-10 -top-10 rounded-full object-cover"
+        className="absolute w-full -right-[50%] -top-[50%] rounded-full object-cover"
       />
     </div>
   );
